@@ -20,10 +20,7 @@ import com.pangea.enums.Sexo;
 @Entity
 @Table(name = "professor")
 public class Professor implements Serializable{
-	
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -31,15 +28,19 @@ public class Professor implements Serializable{
 	@Column(name = "id_professor")
 	private Long id;
 	
+	@Column
 	private String nome;
 	
 	@Column(name = "data_nascimento")
 	private LocalDate dataNascimento;	
 	
+	@Column
 	private String rg;
 	
+	@Column
 	private String cpf;
 	
+	@Column
 	private String telefone;
 	
 	@Embedded

@@ -15,6 +15,8 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
+		<deltaspike.version>1.9.3</deltaspike.version>
+		<weld.version>2.3.3.Final</weld.version>
 	</properties>
 
 	<dependencies>
@@ -26,5 +28,63 @@
 			<scope>provided</scope>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.apache.deltaspike.core/deltaspike-core-api -->
+		<dependency>
+			<groupId>org.apache.deltaspike.core</groupId>
+			<artifactId>deltaspike-core-api</artifactId>
+			<version>1.9.4</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.deltaspike.core/deltaspike-core-impl -->
+		<dependency>
+			<groupId>org.apache.deltaspike.core</groupId>
+			<artifactId>deltaspike-core-impl</artifactId>
+			<version>1.9.4</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.deltaspike.cdictrl/deltaspike-cdictrl-api -->
+		<dependency>
+			<groupId>org.apache.deltaspike.cdictrl</groupId>
+			<artifactId>deltaspike-cdictrl-api</artifactId>
+			<version>1.9.4</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.jboss.weld.se/weld-se-core -->
+		<dependency>
+			<groupId>org.jboss.weld.se</groupId>
+			<artifactId>weld-se-core</artifactId>
+			<version>3.1.4.Final</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.deltaspike.cdictrl/deltaspike-cdictrl-weld -->
+		<dependency>
+			<groupId>org.apache.deltaspike.cdictrl</groupId>
+			<artifactId>deltaspike-cdictrl-weld</artifactId>
+			<version>1.9.4</version>
+			<scope>test</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.apache.deltaspike.modules</groupId>
+			<artifactId>deltaspike-data-module-api</artifactId>
+			<version>1.9.4</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.deltaspike.modules</groupId>
+			<artifactId>deltaspike-data-module-impl</artifactId>
+			<version>1.9.4</version>
+			<scope>runtime</scope>
+
+		</dependency>
+
+
+
 	</dependencies>
+
 </project>

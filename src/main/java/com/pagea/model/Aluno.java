@@ -16,16 +16,13 @@ import javax.persistence.Table;
 
 import com.pangea.enums.Sexo;
 
-
+///agendamentoemail/src/main/webapp/WEB-INF/classes/META-INF/persistence.xml
 
 
 @Entity
 @Table(name = "aluno")
 public class Aluno implements Serializable{
 	
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -33,15 +30,19 @@ public class Aluno implements Serializable{
 	@Column(name = "id_aluno")
 	private Long id;
 	
+	@Column
 	private String nome;
 	
 	@Column(name = "data_nascimento")
 	private LocalDate dataNascimento;	
 	
+	@Column
 	private BigInteger matricula;
 	
+	@Column
 	private String rg;
 	
+	@Column
 	private String telefone;
 	
 	@Embedded
