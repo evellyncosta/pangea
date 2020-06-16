@@ -20,7 +20,7 @@ import com.pangea.enums.Sexo;
 
 
 @Entity
-@Table(name = "aluno")
+@Table(name = "aluno", schema = "escolar")
 public class Aluno implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
