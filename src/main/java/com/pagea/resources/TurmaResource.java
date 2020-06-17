@@ -1,6 +1,5 @@
 package com.pagea.resources;
 
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,33 +13,38 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.pagea.model.Aluno;
-import com.pagea.service.AlunoService;
-import com.pangea.repository.AlunoRepository;
-
+import com.pagea.model.Turma;
+import com.pagea.service.TurmaService;
+import com.pangea.repository.TurmaRepository;
 
 @Path("/alunos")
-public class AlunoResource {
-
+public class TurmaResource {
 	@Inject
-	AlunoRepository alunoRepository;
-
+	TurmaRepository turmaRepository;
+	
 	@Inject
-	AlunoService alunoService;
-
+	TurmaService turmaService;
+	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response listarAgendamentosEmail() {
-		List<Aluno> alunos = new ArrayList<Aluno>();
-		alunos = alunoRepository.findAll();
-		return Response.ok(alunos).build();
+		List<Turma> turmas = new ArrayList<Turma>();
+
+		turmas = turmaRepository.findAll();
+
+		return Response.ok(turmas).build();
+
 	}
 	
 
 
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response salvarAluno(Aluno aluno) {
-		Aluno alunoSalvo = alunoService.salvarAluno(aluno);
-		return Response.status(201).entity(alunoSalvo).build();
+	public Response salvarTurma(Turma turma) {
+
+		Turma turmaSalva = turmaService.salvarTurma(turma);
+		return Response.status(201).entity(turmaSalva).build();
+
 	}
+	
 }
