@@ -12,7 +12,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.pagea.model.Aluno;
 import com.pagea.model.Professor;
 import com.pagea.service.ProfessorService;
 import com.pangea.repository.ProfessorRepository;
@@ -27,7 +26,7 @@ public class ProfessorResourece {
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response listarAgendamentosEmail() {
+	public Response lsitarProfessores() {
 		List<Professor> professores = new ArrayList<Professor>();
 		professores = professorRepository.findAll();
 		return Response.ok(professores).build();

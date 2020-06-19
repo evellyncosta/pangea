@@ -1,6 +1,5 @@
 package com.pagea.resources;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -26,7 +25,7 @@ public class CursoResource {
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response listarAgendamentosEmail() {
+	public Response listarCursos() {
 		List<Curso> cursos = cursoRepository.findAll();
 		return Response.ok(cursos).build();
 	}

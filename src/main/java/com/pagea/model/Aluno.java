@@ -2,7 +2,6 @@ package com.pagea.model;
 import java.io.Serializable;
 import java.math.BigInteger;
 import java.time.LocalDate;
-import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Embedded;
@@ -15,8 +14,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import com.pangea.enums.Sexo;
-
-///agendamentoemail/src/main/webapp/WEB-INF/classes/META-INF/persistence.xml
 
 
 @Entity

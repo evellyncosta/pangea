@@ -13,7 +13,7 @@ public class TurmaService {
 	@Inject
 	TurmaRepository turmaRepository;
 	
-	public Turma salvarTurma(@Valid Turma turma) {
+	public Turma salvarTurma(Turma turma) {
 		Turma turmaSalva = turmaRepository.saveAndFlush(turma);
 		
 		return turmaSalva;

@@ -1,6 +1,5 @@
 package com.pagea.resources;
 
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,7 +28,7 @@ public class AlunoResource {
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response listarAgendamentosEmail() {
+	public Response listarAlunos() {
 		List<Aluno> alunos = new ArrayList<Aluno>();
 		alunos = alunoRepository.findAll();
 		return Response.ok(alunos).build();
