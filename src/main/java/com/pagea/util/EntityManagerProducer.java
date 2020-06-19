@@ -8,7 +8,7 @@ import javax.persistence.PersistenceUnit;
 
 public class EntityManagerProducer {
 
-	@PersistenceUnit
+	@PersistenceUnit(name = "agendamento")
 	private EntityManagerFactory emf;
 
 	@Produces 

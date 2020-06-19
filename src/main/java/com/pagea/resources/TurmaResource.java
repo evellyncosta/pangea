@@ -16,7 +16,7 @@ import com.pagea.model.Turma;
 import com.pagea.service.TurmaService;
 import com.pangea.repository.TurmaRepository;
 
-@Path("/alunos")
+@Path("/turmas")
 public class TurmaResource {
 	@Inject
 	TurmaRepository turmaRepository;

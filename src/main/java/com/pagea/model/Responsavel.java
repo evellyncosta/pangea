@@ -5,16 +5,19 @@ import java.time.LocalDate;
 
 import javax.persistence.Column;
 import javax.persistence.Embedded;
+import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import com.pangea.enums.Sexo;
 
 
-
+@Entity
+@Table(name = "responsavel")
 public class Responsavel implements Serializable{
 	
 	private static final long serialVersionUID = 1L;

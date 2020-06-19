@@ -4,10 +4,14 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table(name = "usuario")
 public class Usuario implements Serializable{
 
 	private static final long serialVersionUID = 1L;
@@ -26,7 +30,7 @@ public class Usuario implements Serializable{
 	@Column(name = "dt_cadastro")
 	private LocalDate dataCadastro;
 	
-	@Column(name = "dt_cadastro")
+	@Column(name = "is_ativo")
 	private Boolean isAtivo;
 
 	public Long getId() {
