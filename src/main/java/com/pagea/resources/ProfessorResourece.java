@@ -26,6 +26,7 @@ public class ProfessorResourece {
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
+	@Consumes(MediaType.APPLICATION_JSON)
 	public Response lsitarProfessores() {
 		List<Professor> professores = new ArrayList<Professor>();
 		professores = professorRepository.findAll();

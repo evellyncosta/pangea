@@ -37,9 +37,10 @@ public class AlunoResource {
 
 
 	@POST
+	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response salvarAluno(Aluno aluno) {
 		Aluno alunoSalvo = alunoService.salvarAluno(aluno);
-		return Response.status(201).entity(alunoSalvo).build();
+		return Response.ok(alunoSalvo).entity(alunoSalvo).build();
 	}
 }

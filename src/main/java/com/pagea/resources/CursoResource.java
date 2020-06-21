@@ -33,6 +33,7 @@ public class CursoResource {
 
 
 	@POST
+	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response salvarCurso(Curso curso) {
 		Curso cursoSalvo = cursoService.salvarCurso(curso);

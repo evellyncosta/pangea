@@ -16,6 +16,7 @@ public class AlunoService {
 	
 	
 	public Aluno salvarAluno(Aluno aluno) {
+		aluno.setIsAtivo(true);
 		Aluno alunoSalvo = alunoRepository.saveAndFlush(aluno);
 		
 		return alunoSalvo;

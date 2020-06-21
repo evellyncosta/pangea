@@ -12,6 +12,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 
 import com.pangea.enums.Sexo;
 
@@ -29,6 +30,7 @@ public class Professor implements Serializable{
 	private Long id;
 	
 	@Column
+	@NotBlank(message="{nome.vazio}")
 	private String nome;
 	
 	@Column(name = "data_nascimento")

@@ -25,6 +25,7 @@ public class ResponsavelResource {
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
+	@Consumes(MediaType.APPLICATION_JSON)
 	public Response listarReponsaveis() {
 		List<Responsavel> responsaveis = responsavelRespository.findAll();
 		return Response.ok(responsaveis).build();

@@ -13,6 +13,7 @@ public class ProfessorService {
 	ProfessorRepository professorRepository;
 
 	public Professor salvarProfessor(Professor professor) {
+		professor.setIsAtivo(true);
 		Professor professorSalvo = professorRepository.saveAndFlush(professor);
 		return professorSalvo;
 	}

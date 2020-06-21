@@ -26,6 +26,7 @@ public class TurmaResource {
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
+	@Consumes(MediaType.APPLICATION_JSON)
 	public Response listarTurmas() {
 		List<Turma> turmas = new ArrayList<Turma>();
 		turmas = turmaRepository.findAll();
