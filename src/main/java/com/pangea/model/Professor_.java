@@ -1,4 +1,4 @@
-package com.pagea.model;
+package com.pangea.model;
 
 import com.pangea.enums.Sexo;
 import java.time.LocalDate;

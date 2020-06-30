@@ -12,9 +12,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.pagea.model.Turma;
-import com.pagea.service.TurmaService;
+import com.pangea.model.Turma;
 import com.pangea.repository.TurmaRepository;
+import com.pangea.service.TurmaService;
 
 @Path("/turmas")
 public class TurmaResource {

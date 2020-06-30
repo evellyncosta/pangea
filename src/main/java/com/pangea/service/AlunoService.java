@@ -1,10 +1,10 @@
-package com.pagea.service;
+package com.pangea.service;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.transaction.Transactional;
 
-import com.pagea.model.Aluno;
+import com.pangea.model.Aluno;
 import com.pangea.repository.AlunoRepository;
 
 

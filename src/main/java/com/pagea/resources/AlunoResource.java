@@ -12,9 +12,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.pagea.model.Aluno;
-import com.pagea.service.AlunoService;
+import com.pangea.model.Aluno;
 import com.pangea.repository.AlunoRepository;
+import com.pangea.service.AlunoService;
 
 
 @Path("/alunos")

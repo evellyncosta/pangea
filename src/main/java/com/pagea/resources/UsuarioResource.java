@@ -11,9 +11,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.pagea.model.Usuario;
-import com.pagea.service.UsuarioService;
+import com.pangea.model.Usuario;
 import com.pangea.repository.UsuarioRepository;
+import com.pangea.service.UsuarioService;
 
 @Path("/usuarios")
 public class UsuarioResource {

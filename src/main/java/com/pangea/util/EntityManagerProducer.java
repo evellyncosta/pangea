@@ -1,4 +1,4 @@
-package com.pagea.util;
+package com.pangea.util;
 
 
 

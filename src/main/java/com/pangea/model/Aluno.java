@@ -1,4 +1,4 @@
-package com.pagea.model;
+package com.pangea.model;
 import java.io.Serializable;
 import java.math.BigInteger;
 import java.time.LocalDate;

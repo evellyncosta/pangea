@@ -1,11 +1,11 @@
-package com.pagea.service;
+package com.pangea.service;
 
 import java.time.LocalDate;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 
-import com.pagea.model.Usuario;
+import com.pangea.model.Usuario;
 import com.pangea.repository.UsuarioRepository;
 
 @Stateless

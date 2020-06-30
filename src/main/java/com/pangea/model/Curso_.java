@@ -1,4 +1,4 @@
-package com.pagea.model;
+package com.pangea.model;
 
 import java.time.LocalDateTime;
 import javax.annotation.Generated;

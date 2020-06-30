@@ -1,10 +1,10 @@
-package com.pagea.service;
+package com.pangea.service;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.validation.Valid;
 
-import com.pagea.model.Turma;
+import com.pangea.model.Turma;
 import com.pangea.repository.TurmaRepository;
 
 @Stateless

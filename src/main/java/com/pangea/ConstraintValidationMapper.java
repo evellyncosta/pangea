@@ -1,4 +1,4 @@
-package com.pagea;
+package com.pangea;
 
 import java.util.stream.Collectors;
 

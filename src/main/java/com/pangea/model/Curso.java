@@ -1,7 +1,7 @@
-package com.pagea.model;
+package com.pangea.model;
 
 import java.io.Serializable;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,29 +12,29 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 
 @Entity
-@Table(name = "usuario")
-public class Usuario implements Serializable{
+@Table(name = "curso")
+public class Curso implements Serializable{
 
-	private static final long serialVersionUID = 1L;
 	
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_usuario")
 	private Long id;
 	
 	@Column
-	@NotBlank(message="{login.vazio}")
-	private String login;
+	@NotBlank(message="{nome.vazio}")
+	private String nome;
 	
 	@Column
-	@NotBlank(message="{senha.vazio}")
+	private String login;
+
+	@Column
 	private String senha;
 	
 	@Column(name = "dt_cadastro")
-	private LocalDate dataCadastro;
-	
-	@Column(name = "is_ativo")
-	private Boolean isAtivo;
+	private LocalDateTime dataCadastro;
 
 	public Long getId() {
 		return id;
@@ -42,6 +42,14 @@ public class Usuario implements Serializable{
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	public String getLogin() {
@@ -60,22 +68,13 @@ public class Usuario implements Serializable{
 		this.senha = senha;
 	}
 
-	public LocalDate getDataCadastro() {
+	public LocalDateTime getDataCadastro() {
 		return dataCadastro;
 	}
 
-	public void setDataCadastro(LocalDate dataCadastro) {
+	public void setDataCadastro(LocalDateTime dataCadastro) {
 		this.dataCadastro = dataCadastro;
 	}
-
-	public Boolean getIsAtivo() {
-		return isAtivo;
-	}
-
-	public void setIsAtivo(Boolean isAtivo) {
-		this.isAtivo = isAtivo;
-	}
-
 	
 	
 }

@@ -1,9 +1,9 @@
-package com.pagea.service;
+package com.pangea.service;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 
-import com.pagea.model.Curso;
+import com.pangea.model.Curso;
 import com.pangea.repository.CursoRepository;
 
 @Stateless

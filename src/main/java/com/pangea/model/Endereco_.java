@@ -1,4 +1,4 @@
-package com.pagea.model;
+package com.pangea.model;
 
 import javax.annotation.Generated;
 import javax.persistence.metamodel.SingularAttribute;

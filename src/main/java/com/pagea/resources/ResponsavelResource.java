@@ -11,9 +11,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.pagea.model.Responsavel;
-import com.pagea.service.ResponsavelService;
+import com.pangea.model.Responsavel;
 import com.pangea.repository.ResponsavelRepository;
+import com.pangea.service.ResponsavelService;
 
 @Path("/responsaveis")
 public class ResponsavelResource {

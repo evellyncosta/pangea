@@ -12,9 +12,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.pagea.model.Professor;
-import com.pagea.service.ProfessorService;
+import com.pangea.model.Professor;
 import com.pangea.repository.ProfessorRepository;
+import com.pangea.service.ProfessorService;
 
 @Path("/professores")
 public class ProfessorResourece {

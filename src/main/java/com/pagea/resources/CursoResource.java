@@ -11,9 +11,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.pagea.model.Curso;
-import com.pagea.service.CursoService;
+import com.pangea.model.Curso;
 import com.pangea.repository.CursoRepository;
+import com.pangea.service.CursoService;
 
 @Path("/cursos")
 public class CursoResource {

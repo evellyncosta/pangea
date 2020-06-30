@@ -1,4 +1,4 @@
-package com.pagea;
+package com.pangea;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
