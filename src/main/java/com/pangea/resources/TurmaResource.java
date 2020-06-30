@@ -1,4 +1,4 @@
-package com.pagea.resources;
+package com.pangea.resources;
 
 import java.util.ArrayList;
 import java.util.List;
